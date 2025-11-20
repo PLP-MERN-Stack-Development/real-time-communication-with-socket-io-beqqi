@@ -129,4 +129,10 @@ server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
+/*io.on('connection', (socket) => {
+    socket.on('message', (msg) => {
+        io.emit('message', msg);
+    });
+});*/
+
 module.exports = { app, server, io }; 
